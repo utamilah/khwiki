@@ -4,17 +4,21 @@
     <title>Khwiki</title>
     <%= csrf_meta_tags %>
 
+
     <%= stylesheet_link_tag    'https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i" rel="stylesheet">
+
   </head>
 
   <body>
-    <%= image_tag 'crown.png' %>
-    <h1>Kingdom Hearts</h1>
-    <p>Universe</p>
-
+    <section class="title">
+      <%= image_tag 'crown.png' %>
+      <h1>Kingdom Hearts</h1>
+      <p>Universe</p>
+    </section>
     <%= yield %>
   </body>
 </html>

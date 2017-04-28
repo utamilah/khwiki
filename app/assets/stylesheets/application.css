@@ -23,6 +23,49 @@ body {
   background: #242424;
 }
 
+.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.title img {
+  width: 1s0%;
+}
+
+.title h1 {
+  font-family: 'Libre Baskerville', serif;
+  text-transform: uppercase;
+  letter-spacing: 7.5px;
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.title p {
+  font-style: italic;
+  margin: 0;
+}
+
+h2 {
+  font-family: "League Spartan";
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 19px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
 /*.wrapper {
 }
 

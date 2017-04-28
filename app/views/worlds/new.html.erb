@@ -1,0 +1,23 @@
+<section class="wrapper">
+
+<h2>New World</h2>
+
+  <%= form_for @world do |f| %>
+    <div class="form_meta_field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="form_meta_field">
+      <%= f.label :img_url %>
+      <%= f.text_field :img_url %>
+    </div>
+
+    <div class="form_meta_field">
+      <%= f.label :description %>
+      <%= f.text_field :description %>
+    </div>
+
+    <%= f.submit %>
+  <% end %>
+</section>
