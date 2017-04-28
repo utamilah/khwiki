@@ -1,0 +1,15 @@
+<section class="wrapper">
+  <header class="main-header">
+    <h2><%= @character.name %></h2>
+    <div class="character">
+      <%= image_tag @character.img_url %>
+    </div>
+
+    <p class="item-text">
+      <%= @character.description %>
+    </p>
+
+    <%= link_to 'Back', world_path %>
+    <%= link_to 'Edit', edit_world_character_path %>
+  </header>
+</section>

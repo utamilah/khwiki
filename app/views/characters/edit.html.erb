@@ -1,0 +1,27 @@
+<section class="wrapper">
+
+<%= form_for [@world, @character] do |f| %>
+  <div class="form_meta_field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="form_meta_field">
+    <%= f.label :img_url %>
+    <%= f.text_field :img_url %>
+  </div>
+
+  <div class="form_meta_field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <%= f.submit %>
+<% end %>
+
+<%= form_for [@world, @character], method: :delete do |f| %>
+  <%= f.submit "Delete!", class: "delete"%>
+<% end %>
+
+<%= link_to 'Back', world_character_path %>
+</section>
