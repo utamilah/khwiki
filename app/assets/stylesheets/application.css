@@ -14,12 +14,43 @@
  *= require_self
  */
 
+ @font-face {
+   font-family: "League Spartan";
+   src: url('leaguespartan-bold.ttf') format("truetype");
+ }
+
 body {
   background: #242424;
 }
 
+/*.wrapper {
+}
+
+.world-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  width: 75%;
+}
+
+.world-list h2 {
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: 'League Spartan', sans-serif;
+  padding: 20px;
+}
 .world-list a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
+  .world {
+    background: rgba(255, 255, 255, 0.5);
+    width: 275px;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    float: left;
+    justify-content: center;
+  }*/

@@ -1,12 +1,10 @@
-<%= image_tag 'crown.png' %>
 
-<h1>Kingdom Hearts</h1>
-<p>Universe</p>
-
-<section class="world-list">
-  <% @worlds.each do |world| %>
-    <div class="world">
-      <h2><%= link_to world.name, world %></h2>
-    </div>
-  <% end %>
+<section class="wrapper">
+  <div class="world-list">
+    <% @worlds.each do |world| %>
+      <div class="world">
+        <h2><%= link_to world.name, world %></h2>
+      </div>
+    <% end %>
+  </div>
 </section>

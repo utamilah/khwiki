@@ -1,0 +1,28 @@
+<section class="wrapper">
+  <header class="main-header">
+    <h2><%= @world.name %></h2>
+  </header>
+
+  <div class="world">
+    <%= image_tag @world.img_url %>
+  </div>
+
+  <p class="item-text">
+    Destiny Islands, named Destiny Island in Kingdom Hearts II, is a world from the Kingdom Hearts series. It is the home world of Sora, Riku, and Master Xehanort. The world seems to be led by an unnamed mayor, who is mentioned as Kairi's foster father.
+  </p>
+
+  <%= link_to 'Back', worlds_path %>
+  <%= link_to 'Edit', edit_world_path %>
+
+  <hr>
+
+  <div class="character-section">
+    <h4>Characters</h4>
+    <% @world.characters.each do |character| %>
+      <p class="character-name">
+        <%= link_to character.name, world_character_path(@world, character)  %>
+      </p>
+    <% end %>
+  </div>
+
+</section>

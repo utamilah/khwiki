@@ -15,6 +15,10 @@ class WorldsController < ApplicationController
     @world = World.create(world_params)
   end
 
+  def edit
+    @world = World.find(params[:id])
+  end
+
   def update
     @world = World.find(params[:id])
     @world.update(world_params)
