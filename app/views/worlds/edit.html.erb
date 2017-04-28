@@ -2,4 +2,25 @@
   <header class="main-header">
     <h2>Edit</h2>
   </header>
+
+  <%= form_for @world do |f| %>
+    <div class="form_meta_field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="form_meta_field">
+      <%= f.label :img_url %>
+      <%= f.text_field :img_url %>
+    </div>
+    <div class="form_meta_field">
+      <%= f.label :description %>
+      <%= f.text_field :description %>
+    </div>
+
+    <%= f.submit %>
+  <% end %>
+
+  <%= form_for @world, method: :delete do |f| %>
+    <%= f.submit "Delete", class: "delete" %>
+  <% end %>
 </section>
