@@ -13,85 +13,85 @@ Character.destroy_all
 ## Worlds
 destiny_islands = World.create({
   name: "Destiny Islands",
-  img_url: "https://www.khwiki.com/images/f/f3/Destiny_Islands_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/thumb/5/58/Destiny_Islands_KHII.png/300px-Destiny_Islands_KHII.png",
   description: "Destiny Islands is the home world of Sora, Riku, and Kairi (although Kairi is originally from Radiant Garden), three of the series's main characters."
 })
 
 disney_castle = World.create({
   name: "Disney Castle",
-  img_url: "https://www.khwiki.com/images/b/bb/Disney_Castle_Logo_KHII.png",
+  img_url: "https://www.khwiki.com/images/b/bd/Disney_Castle_KHII.png",
   description: "Disney Castle is surrounded by Disney Town, and contains a portal to its past form, Timeless River. It is the home of King Mickey, Queen Minnie, Daisy, Donald, Goofy, and the other classic animated characters created by Walt Disney."
 })
 
 traverse_town = World.create({
   name: "Traverse Town",
-  img_url: "https://www.khwiki.com/images/e/eb/Traverse_Town_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/b/b4/Traverse_Town_KH.png",
   description: "Traverse Town is a world in the Realm Between introduced in Kingdom Hearts, where it serves as the game's main hub. It is a unique world that consists of the remnants of worlds which have been lost to darkness, and serves as a haven to those whose worlds no longer exist in the Realm of Light; in order to serve as a new home, it is able to reshape its own layout to meet their needs."
 })
 
 wonderland = World.create({
   name: "Wonderland",
-  img_url: "https://www.khwiki.com/images/thumb/b/b9/Wonderland_Logo_KH.png/800px-Wonderland_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/thumb/9/93/Wonderland_KH.png/408px-Wonderland_KH.png",
   description: "Wonderland is nonsensical and bizarre in its own way. Houses that have foldable furniture, a tea party without any guests, and a forest of giant flowers are just some of the odd things found here. The world is ruled by the stroppy Queen of Hearts and her card-like soldiers."
 })
 
 olympus_coliseum = World.create({
   name: "Olympus Coliseum",
-  img_url: "https://www.khwiki.com/images/5/5b/Olympus_Coliseum_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/8/82/Olympus_Coliseum_KHII.png",
   description: "Olympus Coliseum is a world that appears in all the Kingdom Hearts games except Kingdom Hearts 3D: Dream Drop Distance. It is based on the Disney feature film, Hercules, although the Coliseum is an invention of the games, and only the Underworld actually appears in the film."
 })
 
 deep_jungle = World.create({
   name: "Deep Jungle",
-  img_url: "https://www.khwiki.com/images/f/f2/Deep_Jungle_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/9/98/Deep_Jungle_KH.png",
   description: "Deep Jungle is a world that appears in Kingdom Hearts, based on the 1999 Disney film, Tarzan. It is home to Tarzan and his ape tribe, as well as a set of explorers trying to learn more about the gorillas."
 })
 
 acre_wood = World.create({
   name: "100 Acre Wood",
-  img_url: "https://www.khwiki.com/images/5/5d/100_Acre_Wood_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/6/66/100_Acre_Wood_KHII.png",
   description: "The 100 Acre Wood, also written as the Hundred Acre Wood, is an optional world based on the fictional locale of author A. A. Milne and Disney's twenty-second animated feature, The Many Adventures of Winnie the Pooh."
 })
 
 agrabah = World.create({
   name: "Agrabah",
-  img_url: "https://www.khwiki.com/images/6/6d/Agrabah_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/3/31/Agrabah_KHII.png",
   description: "Agrabah is a world from the Kingdom Hearts series, based on Disney's 1992 film Aladdin, as well as its sequel, The Return of Jafar. Jasmine, one of the Princesses of Heart, resides in this world. The Keyhole for this world is hidden deep in The Cave of Wonders, within the Lamp Chamber."
 })
 
 monstro = World.create({
   name: "Monstro",
-  img_url: "https://www.khwiki.com/images/6/6d/Agrabah_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/a/ad/Monstro_KH.png",
   description: "Monstro is both a character and 'world' in Kingdom Hearts and Kingdom Hearts: Chain of Memories, making him one of the most peculiar characters in the series so far. Monstro is so enormous that its playable map is bigger than that of some other worlds, such as Wonderland. If one leaves Monstro and tries to go a different direction, then they will be caught by Monstro again and Monstro will appear twice on the map."
 })
 
 atlantica = World.create({
   name: "Atlantica",
-  img_url: "https://www.khwiki.com/images/6/61/Atlantica_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/c/c8/Atlantica_KHII.png",
   description: "Atlantica is a world that appears in Kingdom Hearts, Kingdom Hearts: Chain of Memories, and Kingdom Hearts II. It is based on the setting of the 1989 film, The Little Mermaid. Almost completely underwater, Atlantica is a rocky world with immense holes on its surface. Beneath the surface is an entire world full of fish, merfolk, and other aquatic species that make up King Triton's underwater kingdom."
 })
 
 halloween_town = World.create({
   name: "Halloween Town",
-  img_url: "https://www.khwiki.com/images/2/26/Halloween_Town_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/9/92/Halloween_Town_KHII.png",
   description: "Atlantica is a world that appears in Kingdom Hearts, Kingdom Hearts: Chain of Memories, and Kingdom Hearts II. It is based on the setting of the 1989 film, The Little Mermaid. Almost completely underwater, Atlantica is a rocky world with immense holes on its surface. Beneath the surface is an entire world full of fish, merfolk, and other aquatic species that make up King Triton's underwater kingdom."
 })
 
 neverland = World.create({
   name: "Neverland",
-  img_url: "https://www.khwiki.com/images/7/79/Neverland_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/a/a7/Neverland_KHBBS.png",
   description: "Neverland is a world based on the 1953 film, Peter Pan. Neverland's Keyhole is near the three o'clock point on Big Ben's clock face, and appears when the hands point at twelve o'clock."
 })
 
 hollow_bastion = World.create({
   name: "Hollow Bastion",
-  img_url: "https://www.khwiki.com/images/d/de/Hollow_Bastion_Logo_KH.png",
+  img_url: "https://www.khwiki.com/images/thumb/a/a7/Hollow_Bastion_KH.png/333px-Hollow_Bastion_KH.png",
   description: "Hollow Bastion is a colossal castle that towers above the rest of its world, Radiant Garden. At one point, it was the only remaining part of the world, along with the waterways beneath it. Because of this, the world itself was known as 'Hollow Bastion' in Kingdom Hearts, Kingdom Hearts: Chain of Memories, and most of Kingdom Hearts II. However, it regains its original name of Radiant Garden by the end of Kingdom Hearts II, when Tron used his powers to show what the world was like before its destruction."
 })
 
 mysterious_tower = World.create({
   name: "Mysterious Tower",
-  img_url: "https://www.khwiki.com/images/f/fb/Mysterious_Tower_Logo_KHBBS.png",
+  img_url: "https://www.khwiki.com/images/8/8f/Mysterious_Tower_KHBBS.png",
   description: "Mysterious Tower is the home of Master Yen Sid, and serves as a starting point for Sora and Mickey's quests in Kingdom Hearts II and Kingdom Hearts Birth by Sleep, respectively. It is a unique world that doesn't always remain in one place"
 })
 
