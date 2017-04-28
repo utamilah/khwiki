@@ -96,7 +96,6 @@ mysterious_tower = World.create({
 })
 
 
-
 ## Characters
 Character.create([
   {

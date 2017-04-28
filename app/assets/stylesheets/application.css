@@ -17,3 +17,9 @@
 body {
   background: #242424;
 }
+
+.world-list a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
