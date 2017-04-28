@@ -3,29 +3,32 @@
     <h2><%= @world.name %></h2>
   </header>
 
-  <div class="column-left">
-    <div class="world">
-      <%= image_tag @world.img_url %>
+  <main class="content">
+    <div class="column-left">
+      <div class="world-single">
+        <%= image_tag @world.img_url %>
+      </div>
     </div>
-  </div>
 
-  <div class="column-right">
-    <p class="item-text">
-      <%= @world.description %>
-    </p>
-
-    <%= link_to 'Back', worlds_path %>
-    <%= link_to 'Edit', edit_world_path %>
-  </div>
-  <hr>
-
-  <div class="character-section">
-    <h4>Characters</h4>
-    <% @world.characters.each do |character| %>
-      <p class="character-name">
-        <%= link_to character.name, world_character_path(@world, character)  %>
+    <div class="column-right">
+      <p class="item-text">
+        <%= @world.description %>
       </p>
-    <% end %>
-  </div>
+
+      <div class="links">
+        <%= link_to 'Back', worlds_path %>
+        <%= link_to 'Edit', edit_world_path %>
+      </div>
+
+      <div class="character-section">
+        <h4>Characters</h4>
+        <% @world.characters.each do |character| %>
+          <p class="character-name">
+            <%= link_to character.name, world_character_path(@world, character)  %>
+          </p>
+        <% end %>
+      </div>
+    </div>
+  </main>
 
 </section>

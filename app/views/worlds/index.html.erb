@@ -3,11 +3,11 @@
   <div class="world-list">
     <% @worlds.each do |world| %>
       <div class="world">
-        <h2><%= link_to world.name, world %></h2>
+        <a href="<%= world_path(world) %>" style=""><h2><%= world.name %></h2></a>
       </div>
     <% end %>
-  </div>
-  <div class="add-new">
-    <h2><%= link_to 'Add New', new_world_path %></h2>
+    <div class="add-new">
+      <h2><%= link_to 'Add New', new_world_path %></h2>
+    </div>
   </div>
 </section>
