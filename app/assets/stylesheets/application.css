@@ -19,24 +19,31 @@
    src: url('leaguespartan-bold.ttf') format("truetype");
  }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background: #242424;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .title {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   text-align: center;
 }
 
 .title img {
-  width: 1s0%;
+  width: 100px;
 }
 
 .title h1 {
   font-family: 'Libre Baskerville', serif;
   text-transform: uppercase;
   letter-spacing: 7.5px;
-  font-size: 28px;
+  font-size: 24px;
   color: #fff;
   margin-bottom: 7px;
 }
@@ -56,7 +63,7 @@ h2 {
 
 p {
   font-family: 'Libre Baskerville', serif;
-  font-size: 19px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -70,9 +77,12 @@ a {
   text-align: center;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  width: 65%;
+  width: 55%;
   margin: 0 auto;
 }
+  .main-header h2 {
+    margin: 30px 0 25px 0;
+  }
 
 .wrapper {
   margin: 0 auto;
@@ -82,6 +92,10 @@ a {
   width: 75%;
   margin: 0 auto;
 }
+  .world-list .links {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
 .world {
   display: inline-flex;
@@ -90,6 +104,7 @@ a {
   width: 28%;
   padding: 20px;
   background: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.5s ease;
   margin: 5px;
 }
   .world h2 {
@@ -111,8 +126,8 @@ a {
 .content {
   display: flex;
   align-items: center;
-  width: 65%;
-  margin: 0 auto;
+  width: 55%;
+  margin: 20px auto;
 }
 
 .column-left {
@@ -132,16 +147,18 @@ a {
   }
 
 .links {
-  margin-top: 40px;
+  margin-top: 30px;
 }
   .links a {
     font-family: 'League Spartan', sans-serif;
+    font-size: 12px;
     text-transform: uppercase;
     padding: 10px 30px 6px 30px;
     margin-right: 10px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
+    transition: background-color 0.5s ease;
   }
     .links a:hover {
       background: rgba(255, 255, 255, 0.1);
@@ -157,6 +174,12 @@ a {
     text-transform: uppercase;
     letter-spacing: 4px;
   }
+    .character-section a {
+      transition: color 0.5s ease;
+    }
+    .character-section a:hover {
+      color: rgba(255, 255, 255, 0.5);
+    }
 
 form {
   margin: 0 auto;
@@ -197,4 +220,19 @@ form {
     border-radius: 5px;
     border: none;
     font-size: 16px;
+  }
+
+.footer-text {
+  text-align: center;
+  font-style: italic;
+  margin-top: 100px;
+}
+  .footer-text p {
+    font-size: 14px;
+  }
+  .footer-text a {
+    transition: color 0.5s ease;
+  }
+  .footer-text a:hover {
+    color: rgba(255,255,255,0.5)
   }

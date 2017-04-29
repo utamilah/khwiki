@@ -1,7 +1,9 @@
 <section class="wrapper">
+<header class="main-header">
+  <h2>New World</h2>
+</header>
 
-<h2>New World</h2>
-
+<main class="content">
   <%= form_for @world do |f| %>
     <div class="form_meta_field">
       <%= f.label :name %>
@@ -20,4 +22,5 @@
 
     <%= f.submit %>
   <% end %>
+</main>
 </section>
