@@ -3,31 +3,28 @@
     <h2>Edit</h2>
   </header>
 
-    <main class="content">
-      <%= form_for @world do |f| %>
-        <div class="form_meta_field">
-          <%= f.label :name %>
-          <%= f.text_field :name %>
-        </div>
-        <div class="form_meta_field">
-          <%= f.label :img_url %>
-          <%= f.text_field :img_url %>
-        </div>
-        <div class="form_meta_field">
-          <%= f.label :description %>
-          <%= f.text_field :description %>
-        </div>
+  <main class="form-content">
+    <%= simple_form_for @world do |f| %>
+      <div class="form_meta_field">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+      <div class="form_meta_field">
+        <%= f.label :img_url %>
+        <%= f.text_field :img_url %>
+      </div>
+      <div class="form_meta_field">
+        <%= f.label :description %>
+        <%= f.text_field :description %>
+      </div>
 
-        <div>
-          <%= f.submit 'Submit', class: "form-submit" %>
-        </div>
-      <% end %>
-
-    </main>
-
-    <%= form_for @world, method: :delete do |f| %>
-      <div>
-        <%= f.submit "Delete", class: "delete" %>
+      <div class="form_meta_field">
+        <%= f.submit "Submit", class: "form-submit" %>
       </div>
     <% end %>
+
+    <%= simple_form_for @world, method: :delete do |f| %>
+      <%= f.submit "Delete", class: "delete" %>
+    <% end %>
+  </main>
 </section>

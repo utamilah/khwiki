@@ -27,7 +27,11 @@
             <%= link_to character.name, world_character_path(@world, character)  %>
           </p>
         <% end %>
+        <div class="new-character">
+          <%= link_to '+ Add New', new_world_character_path(@world, @character) %>
+        </div>
       </div>
+
     </div>
   </main>
 
