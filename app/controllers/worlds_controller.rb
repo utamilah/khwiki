@@ -13,6 +13,8 @@ class WorldsController < ApplicationController
 
   def create
     @world = World.create(world_params)
+
+    redirect_to world_path(@world)
   end
 
   def edit

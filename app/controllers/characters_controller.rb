@@ -4,6 +4,7 @@ class CharactersController < ApplicationController
   end
 
   def show
+    @world = World.find(params[:world_id])
     @character = Character.find(params[:id])
   end
 
@@ -29,7 +30,7 @@ class CharactersController < ApplicationController
     @character = Character.find(params[:id])
     @character.update(character_params)
 
-    redirect_to world_character_path(@character)
+    redirect_to world_character_path(@world, @character)
   end
 
   def destroy
