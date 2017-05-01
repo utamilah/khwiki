@@ -1,7 +1,6 @@
 <section class="wrapper">
   <header class="main-header">
     <h2>Edit Character / <%= link_to @character.name, world_character_path %></h2>
-    <p></p>
   </header>
   <main class="form-content">
     <%= simple_form_for [@world, @character], :html => {:class => "pure-form pure-form-stacked"} do |f| %>
@@ -32,7 +31,7 @@
     <% end %>
 
     <%= simple_form_for [@world, @character], method: :delete do |f| %>
-      <div class="form-submit delete">
+      <div class="form-submit">
         <%= f.submit "Delete" %>
       </div>
     <% end %>

@@ -1,7 +1,7 @@
 <div class="world-list">
   <% @worlds.each do |world| %>
     <div class="world">
-      <a href="<%= world_path(world) %>" style=""><h2><%= world.name %></h2></a>
+      <a href="<%= world_path(world) %>"><h2><%= world.name %></h2></a>
     </div>
   <% end %>
   <div class="links">

@@ -25,14 +25,10 @@
         <%= f.submit %>
       </div>
 
-      <div class="links">
-        <%= link_to 'Back', world_path(@world) %>
-      </div>
-
     <% end %>
 
     <%= simple_form_for @world, method: :delete do |f| %>
-      <div class="form-submit delete">
+      <div class="form-submit">
         <%= f.submit "Delete"%>
       </div>
     <% end %>
