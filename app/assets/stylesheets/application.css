@@ -87,6 +87,10 @@ a {
     .main-header h2 a:hover {
       color: rgba(255, 255, 255, 1);
     }
+  .main-header a {
+    color: rgba(255,255,255,0.5)
+  }
+
   .main-header p {
     font-style: italic;
     color: rgba(255, 255, 255, 0.5);
@@ -105,6 +109,7 @@ a {
   .world-list .links {
     text-align: center;
     margin-bottom: 50px;
+    display: block;
   }
 
 .world {
@@ -157,12 +162,13 @@ a {
 
 .links {
   margin-top: 30px;
+  display: inline;
 }
   .links a {
     font-family: 'League Spartan', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
-    padding: 10px 30px 6px 30px;
+    padding: 10px 30px 10px 30px;
     margin-right: 10px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
@@ -198,25 +204,68 @@ a {
     color: rgba(255, 255, 255, 1);
   }
 
+/* Form Styling: A Nightmare */
+
 .form-content {
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
-  form {
-    margin: 0 auto;
+.form-group {
+  padding-bottom: 20px;
+}
+
+.form-submit {
+  display: inline;
+}
+
+.form-submit input {
+  font-family: 'League Spartan', serif;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  padding: 10px 30px 10px 30px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.5s ease;
+  margin-right: 10px;
+}
+  .form-submit input:hover {
+    background: rgba(255, 255, 255, 0.1);
   }
+
+form {
+  margin: 0 auto;
+}
+
+.form-group label {
+  font-family: 'League Spartan', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.form-group input {
+  width: 100%;
+  display: inline;
+}
+
+/* footer */
 
 .footer-text {
   text-align: center;
   font-style: italic;
   margin-top: 100px;
+  color: rgba(255,255,255,0.5)
 }
   .footer-text p {
     font-size: 14px;
   }
   .footer-text a {
     transition: color 0.5s ease;
+    color: rgba(255,255,255,0.5)
   }
   .footer-text a:hover {
-    color: rgba(255,255,255,0.5)
+    color: rgba(255,255,255,1)
   }

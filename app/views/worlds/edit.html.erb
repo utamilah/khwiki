@@ -1,30 +1,37 @@
 <section class="wrapper">
   <header class="main-header">
-    <h2>Edit</h2>
+    <h2>Edit World</h2>
+    <p><%= link_to 'Back', world_path(@world) %></p>
   </header>
 
   <main class="form-content">
-    <%= simple_form_for @world do |f| %>
-      <div class="form_meta_field">
+    <%= simple_form_for @world, :html => {:class => "pure-form pure-form-stacked"} do |f| %>
+      <div class="form-group">
         <%= f.label :name %>
         <%= f.text_field :name %>
       </div>
-      <div class="form_meta_field">
+
+      <div class="form-group">
         <%= f.label :img_url %>
         <%= f.text_field :img_url %>
       </div>
-      <div class="form_meta_field">
+
+      <div class="form-group">
         <%= f.label :description %>
         <%= f.text_field :description %>
       </div>
 
-      <div class="form_meta_field">
-        <%= f.submit "Submit", class: "form-submit" %>
+      <div class="form-submit">
+        <%= f.submit %>
       </div>
+
+      <%= simple_form_for @world, method: :delete do |f| %>
+        <div class="form-submit delete">
+          <%= f.submit "Delete"%>
+        </div>
+      <% end %>
+
     <% end %>
 
-    <%= simple_form_for @world, method: :delete do |f| %>
-      <%= f.submit "Delete", class: "delete" %>
-    <% end %>
   </main>
 </section>

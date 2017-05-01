@@ -1,6 +1,7 @@
 <section class="wrapper">
   <header class="main-header">
     <h2><%= @world.name %></h2>
+    <p><%= link_to 'Back', worlds_path %></p>
   </header>
 
   <main class="content">
@@ -16,7 +17,6 @@
       </p>
 
       <div class="links">
-        <%= link_to 'Back', worlds_path %>
         <%= link_to 'Edit', edit_world_path %>
       </div>
 

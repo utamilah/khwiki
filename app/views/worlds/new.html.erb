@@ -4,25 +4,30 @@
   </header>
 
   <main class="form-content">
-    <%= simple_form_for @world do |f| %>
-        <div class="form_meta_field">
-          <%= f.label :name %>
-          <%= f.text_field :name %>
-        </div>
+    <%= simple_form_for @world, :html => {:class => "pure-form pure-form-stacked"} do |f| %>
+          <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+          </div>
 
-        <div class="form_meta_field">
-          <%= f.label :img_url %>
-          <%= f.text_field :img_url %>
-        </div>
+          <div class="form-group">
+            <%= f.label :img_url %>
+            <%= f.text_field :img_url %>
+          </div>
 
-        <div class="form_meta_field">
-          <%= f.label :description %>
-          <%= f.text_field :description %>
-        </div>
+          <div class="form-group">
+            <%= f.label :description %>
+            <%= f.text_field :description %>
+          </div>
+          
+          <div class="form-submit">
+            <%= f.submit %>
+          </div>
 
-        <div class="form_meta_field">
-          <%= f.submit %>
-        </div>
+          <div class="links">
+            <%= link_to 'Back', worlds_path(@world) %>
+          </div>
     <% end %>
+
   </main>
 </section>

@@ -1,34 +1,34 @@
 <section class="wrapper">
-  <main class="content">
-    <%= simple_form_for [@world, @character] do |f| %>
-      <div class="form_meta_field">
+  <header class="main-header">
+    <h2>Edit Character</h2>
+    <p><%= link_to 'Back', world_character_path %></p>
+  </header>
+  <main class="form-content">
+    <%= simple_form_for [@world, @character], :html => {:class => "pure-form pure-form-stacked"} do |f| %>
+      <div class="form-group">
         <%= f.label :name %>
         <%= f.text_field :name %>
       </div>
 
-      <div class="form_meta_field">
+      <div class="form-group">
         <%= f.label :img_url %>
         <%= f.text_field :img_url %>
       </div>
 
-      <div class="form_meta_field">
+      <div class="form-group">
         <%= f.label :description %>
         <%= f.text_field :description %>
       </div>
 
-      <div class="form_meta_field">
+      <div class="form-submit">
         <%= f.submit %>
       </div>
-    <% end %>
 
-    <%= simple_form_for [@world, @character], method: :delete do |f| %>
-      <div class="form_meta_field">
-        <%= f.submit "Delete!", class: "delete"%>
-      </div>
+      <%= simple_form_for [@world, @character], method: :delete do |f| %>
+        <div class="form-submit delete">
+          <%= f.submit "Delete" %>
+        </div>
+      <% end %>
     <% end %>
-
-    <div class="links">
-      <%= link_to 'Back', world_character_path %>
-    </div>
   </main>
 </section>

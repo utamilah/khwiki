@@ -1,7 +1,7 @@
 <section class="wrapper">
   <header class="main-header">
     <h2><%= @character.name %></h2>
-    <p><%= @character.origin %></p>
+    <p><%= @character.origin %> / <%= link_to @character.world.name, world_path(@world) %></p>
   </header>
 
   <main class="content">
@@ -17,7 +17,6 @@
       </p>
 
       <div class="links">
-        <%= link_to 'Back', world_path(@world) %>
         <%= link_to 'Edit', edit_world_character_path %>
       </div>
     </div>
