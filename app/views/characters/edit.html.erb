@@ -1,7 +1,7 @@
 <section class="wrapper">
   <header class="main-header">
-    <h2>Edit Character</h2>
-    <p><%= link_to 'Back', world_character_path %></p>
+    <h2>Edit Character / <%= link_to @character.name, world_character_path %></h2>
+    <p></p>
   </header>
   <main class="form-content">
     <%= simple_form_for [@world, @character], :html => {:class => "pure-form pure-form-stacked"} do |f| %>
@@ -13,6 +13,11 @@
       <div class="form-group">
         <%= f.label :img_url %>
         <%= f.text_field :img_url %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :origin %>
+        <%= f.text_field :origin %>
       </div>
 
       <div class="form-group">

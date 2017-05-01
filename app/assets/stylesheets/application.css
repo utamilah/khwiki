@@ -31,7 +31,7 @@ body {
 }
 
 .title {
-  margin-bottom: 70px;
+  margin: 40px 0 70px 0;
   text-align: center;
 }
 
@@ -88,8 +88,12 @@ a {
       color: rgba(255, 255, 255, 1);
     }
   .main-header a {
-    color: rgba(255,255,255,0.5)
+    color: rgba(255,255,255,0.5);
+    transition: color 0.5s ease;
   }
+    .main-header a:hover {
+      color: rgba(255,255,255,1);
+    }
 
   .main-header p {
     font-style: italic;
@@ -108,7 +112,6 @@ a {
 }
   .world-list .links {
     text-align: center;
-    margin-bottom: 50px;
     display: block;
   }
 
@@ -161,7 +164,7 @@ a {
   }
 
 .links {
-  margin-top: 30px;
+  margin-top: 50px;
   display: inline;
 }
   .links a {
@@ -199,6 +202,9 @@ a {
 .character-section .new-character a {
   color: rgba(255, 255, 255, 0.5);
   transition: color 0.5s ease;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 14px;
+  font-style: italic;
 }
   .character-section .new-character a:hover {
     color: rgba(255, 255, 255, 1);
