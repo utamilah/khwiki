@@ -24,11 +24,13 @@
         <%= f.submit %>
       </div>
 
-      <%= simple_form_for [@world, @character], method: :delete do |f| %>
-        <div class="form-submit delete">
-          <%= f.submit "Delete" %>
-        </div>
-      <% end %>
     <% end %>
+
+    <%= simple_form_for [@world, @character], method: :delete do |f| %>
+      <div class="form-submit delete">
+        <%= f.submit "Delete" %>
+      </div>
+    <% end %>
+
   </main>
 </section>

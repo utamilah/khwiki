@@ -1,7 +1,6 @@
 <section class="wrapper">
   <header class="main-header">
     <h2>Edit World</h2>
-    <p><%= link_to 'Back', world_path(@world) %></p>
   </header>
 
   <main class="form-content">
@@ -25,12 +24,16 @@
         <%= f.submit %>
       </div>
 
-      <%= simple_form_for @world, method: :delete do |f| %>
-        <div class="form-submit delete">
-          <%= f.submit "Delete"%>
-        </div>
-      <% end %>
+      <div class="links">
+        <%= link_to 'Back', world_path(@world) %>
+      </div>
 
+    <% end %>
+
+    <%= simple_form_for @world, method: :delete do |f| %>
+      <div class="form-submit delete">
+        <%= f.submit "Delete"%>
+      </div>
     <% end %>
 
   </main>

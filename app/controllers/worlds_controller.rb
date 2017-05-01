@@ -25,7 +25,7 @@ class WorldsController < ApplicationController
     @world = World.find(params[:id])
     @world.update(world_params)
 
-    redirect_to world_path
+    redirect_to world_path(@world)
   end
 
   def destroy
