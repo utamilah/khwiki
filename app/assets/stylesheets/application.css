@@ -14,10 +14,10 @@
  *= require_self
  */
 
- @font-face {
-   font-family: "League Spartan";
-   src: url('leaguespartan-bold.ttf') format("truetype");
- }
+@font-face {
+  font-family: "League Spartan";
+  src: url('leaguespartan-bold.ttf') format("truetype");
+}
 
 html {
   position: relative;
@@ -35,21 +35,23 @@ body {
   text-align: center;
 }
 
-  .title img {
-    width: 100px;
-  }
-  .title h1 {
-    font-family: 'Libre Baskerville', serif;
-    text-transform: uppercase;
-    letter-spacing: 7.5px;
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 7px;
-  }
-  .title p {
-    font-style: italic;
-    margin: 0;
-  }
+.title img {
+  width: 100px;
+}
+
+.title h1 {
+  font-family: 'Libre Baskerville', serif;
+  text-transform: uppercase;
+  letter-spacing: 7.5px;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.title p {
+  font-style: italic;
+  margin: 0;
+}
 
 h2 {
   font-family: "League Spartan";
@@ -77,29 +79,34 @@ a {
   border-bottom: 1px solid #fff;
   margin: 0 auto;
 }
-  .main-header h2 {
-    margin: 30px 0 20px 0;
-  }
-    .main-header h2 a {
-      color: rgba(254, 191, 18, 1);
-      transition: color 0.5s ease;
-    }
-    .main-header h2 a:hover {
-      color: rgba(255, 255, 255, 1);
-    }
-  .main-header a {
-    color: rgba(254, 191, 18, 1.00);
-    transition: color 0.5s ease;
-  }
-    .main-header a:hover {
-      color: rgba(255,255,255,1);
-    }
 
-  .main-header p {
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 23px;
-  }
+.main-header h2 {
+  margin: 30px 0 20px 0;
+}
+
+.main-header h2 a {
+  color: rgba(254, 191, 18, 1);
+  transition: color 0.5s ease;
+}
+
+.main-header h2 a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-header a {
+  color: rgba(254, 191, 18, 1.00);
+  transition: color 0.5s ease;
+}
+
+.main-header a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-header p {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 23px;
+}
 
 .wrapper {
   margin: 0 auto;
@@ -110,11 +117,12 @@ a {
   width: 75%;
   margin: 0 auto;
 }
-  .world-list .links {
-    text-align: center;
-    display: block;
-    margin: 50px 0 50px 0;
-  }
+
+.world-list .links {
+  text-align: center;
+  display: block;
+  margin: 50px 0 50px 0;
+}
 
 .world {
   display: inline-flex;
@@ -126,22 +134,27 @@ a {
   transition: background-color 0.5s ease;
   margin: 5px;
 }
-  .world h2 {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    padding: 10px;
-    margin: 20px;
-    font-size: 10px;
-  }
-  .world a {
-    text-align: center;
-  }
-  .world:hover {
-    background: rgba(255, 255, 255, 0.1);
-  }
+
+.world h2 {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  margin: 20px;
+  font-size: 10px;
+}
+
+.world a {
+  text-align: center;
+}
+
+.world:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 
 /* main content container */
+
 .content {
   display: flex;
   align-items: center;
@@ -153,51 +166,57 @@ a {
   margin: 20px;
   width: 30%;
 }
-  .column-left img {
-    width: 100%;
-  }
+
+.column-left img {
+  width: 100%;
+}
+
 .column-right {
   width: 70%;
   margin-left: 30px;
 }
-  .column-right p {
-    line-height: 31px;
-  }
 
-.links {
-
+.column-right p {
+  line-height: 31px;
 }
-  .links a {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    padding: 10px 30px 10px 30px;
-    margin-right: 10px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    letter-spacing: 3px;
-    transition: background-color 0.5s ease;
-  }
-    .links a:hover {
-      background: rgba(255, 255, 255, 0.1);
-    }
+
+.links {}
+
+.links a {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 30px 10px 30px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  letter-spacing: 3px;
+  transition: background-color 0.5s ease;
+}
+
+.links a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
 
 .character-section {
   margin-top: 60px;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-  .character-section h4 {
-    font-family: 'League Spartan', sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-  }
-    .character-section a {
-      transition: color 0.5s ease;
-    }
-    .character-section a:hover {
-      color: rgba(255, 255, 255, 0.5);
-    }
+
+.character-section h4 {
+  font-family: 'League Spartan', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.character-section a {
+  transition: color 0.5s ease;
+}
+
+.character-section a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 .character-section .new-character a {
   color: rgba(255, 255, 255, 0.5);
@@ -206,9 +225,11 @@ a {
   font-size: 14px;
   font-style: italic;
 }
-  .character-section .new-character a:hover {
-    color: rgba(255, 255, 255, 1);
-  }
+
+.character-section .new-character a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
 
 /* Form Styling: A Nightmare */
 
@@ -236,9 +257,10 @@ a {
   background: rgba(255, 255, 255, 0.5);
   transition: background-color 0.5s ease;
 }
-  .form-submit input:hover {
-    background: rgba(255, 255, 255, 0.1);
-  }
+
+.form-submit input:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
 
 form {
   margin: 0 auto;
@@ -258,6 +280,7 @@ form {
   font-size: 14px;
 }
 
+
 /* footer */
 
 .footer-text {
@@ -265,18 +288,21 @@ form {
   font-style: italic;
   margin: 100px 0 50px 0;
   border-top: 1px solid #fff;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   width: 55%;
   margin: 0 auto;
   padding: 30px 0 20px 0;
 }
-  .footer-text p {
-    font-size: 14px;
-  }
-  .footer-text a {
-    transition: color 0.5s ease;
-    color: rgba(254, 191, 18, 1.00)
-  }
-  .footer-text a:hover {
-    color: rgba(255,255,255,1)
-  }
+
+.footer-text p {
+  font-size: 14px;
+}
+
+.footer-text a {
+  transition: color 0.5s ease;
+  color: rgba(254, 191, 18, 1.00)
+}
+
+.footer-text a:hover {
+  color: rgba(255, 255, 255, 1)
+}
