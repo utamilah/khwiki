@@ -30,32 +30,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-<<<<<<< HEAD
-.title {
-  margin: 40px 0 70px 0;
-  text-align: center;
-}
-
-.title img {
-  width: 100px;
-}
-
-.title h1 {
-  font-family: 'Libre Baskerville', serif;
-  text-transform: uppercase;
-  letter-spacing: 7.5px;
-  font-size: 24px;
-  color: #fff;
-  margin-bottom: 7px;
-}
-
-.title p {
-  font-style: italic;
-  margin: 0;
-}
-
-=======
->>>>>>> devise-branch
 h2 {
   font-family: "League Spartan";
   font-size: 18px;
@@ -179,15 +153,6 @@ a {
   display: block;
   margin: 50px 0 50px 0;
 }
-<<<<<<< HEAD
-
-.world-list .links {
-  text-align: center;
-  display: block;
-  margin: 50px 0 50px 0;
-}
-=======
->>>>>>> devise-branch
 
 .world {
   width: 32.75%;
@@ -203,30 +168,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-  width: 28%;
-  padding: 20px;
-  background: rgba(254, 191, 18, 0.3);
-  transition: background-color 0.5s ease;
-  margin: 5px;
-}
-
-.world h2 {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  padding: 10px;
-  margin: 20px;
-  font-size: 10px;
-}
-
-.world a {
-  text-align: center;
-}
-
-.world:hover {
-  background: rgba(255, 255, 255, 0.1);
-=======
 }
 
 .world a:hover {
@@ -235,7 +176,6 @@ a {
 
 .world h2 {
   font-size: 10px;
->>>>>>> devise-branch
 }
 
 
@@ -267,21 +207,6 @@ a {
 }
 
 .links {}
-<<<<<<< HEAD
-
-.links a {
-  font-family: 'League Spartan', sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 10px 30px 10px 30px;
-  margin-right: 10px;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
-  letter-spacing: 3px;
-  transition: background-color 0.5s ease;
-}
-
-=======
 
 .links a {
   font-family: 'League Spartan', sans-serif;
@@ -295,7 +220,6 @@ a {
   transition: background-color 0.5s ease;
 }
 
->>>>>>> devise-branch
 .links a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -362,13 +286,6 @@ a {
   transition: background-color 0.5s ease;
   margin-bottom: 13px;
 }
-<<<<<<< HEAD
-
-.form-submit input:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-=======
->>>>>>> devise-branch
 
 .form-submit input:hover {
   background: rgba(255, 255, 255, 0.3);
@@ -405,8 +322,6 @@ textarea {
   font-size: 14px;
 }
 
-<<<<<<< HEAD
-=======
 .form-share {
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
@@ -441,7 +356,6 @@ textarea {
   text-align: center;
 }
 
->>>>>>> devise-branch
 
 /* footer */
 
