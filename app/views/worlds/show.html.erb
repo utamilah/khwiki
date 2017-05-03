@@ -23,9 +23,9 @@
       <div class="character-section">
         <h4>Characters</h4>
         <% @world.characters.each do |character| %>
-          <p class="character-name">
-            <%= link_to character.name, world_character_path(@world, character)  %>
-          </p>
+        <p class="character-name">
+          <%= link_to character.name, world_character_path(@world, character)  %>
+        </p>
         <% end %>
         <div class="new-character">
           <%= link_to '+ Add New', new_world_character_path(@world, @character) %>

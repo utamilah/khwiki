@@ -14,14 +14,17 @@
   </head>
 
   <body>
-    <section class="top-info">
+    <div class="top-info">
       <% if user_signed_in? == true %>
-          <div class="user-action"><%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %></div>
-          <div class="user-info">Welcome, <%= current_user.email %></div>
-      <% else %>
-          <div class="user-action"><%= link_to 'Login', new_user_session_path %> | <%= link_to 'Sign Up', new_user_registration_path %></div>
+      <div class="user-action"><%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %></div>
+      <div class="user-info">Welcome,
+        <%= current_user.email %></div>
+    <% else %>
+      <div class="user-action"><%= link_to 'Login', new_user_session_path %>
+        |
+        <%= link_to 'Sign Up', new_user_registration_path %></div>
       <% end %>
-    </section>
+    </div>
 
     <section class="title">
       <a href="<%= worlds_path %>"><%= image_tag 'crown.png' %></a>
@@ -29,16 +32,18 @@
       <p>Universe</p>
     </section>
 
-    <section class="wrapper">
+    <div class="wrapper">
       <div class="flash">
         <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p>
       </div>
-    </section>
-    <%= yield %>
-  </body>
+    </div>
 
-  <footer class="footer-text">
-    <p>Design by <%= link_to 'Halimatu Bakarr', 'http://halimatubakarr.com' %>. Built with Rails.</p>
-  </footer>
+    <%= yield %>
+
+    <footer class="footer-text">
+      <p>Design by
+        <%= link_to 'Halimatu Bakarr', 'http://halimatubakarr.com' %>. Built with Rails.</p>
+    </footer>
+  </body>
 </html>

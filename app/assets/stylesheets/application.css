@@ -51,6 +51,8 @@ a {
 }
 
 
+/* Log in information */
+
 .top-info {
   font-family: 'Libre Baskerville', serif;
   color: #fff;
@@ -78,6 +80,9 @@ a {
   color: rgba(255, 255, 255, 1);
 }
 
+
+/* Title Page */
+
 .title {
   margin: 40px 0 70px 0;
   text-align: center;
@@ -100,6 +105,9 @@ a {
   font-style: italic;
   margin: 0;
 }
+
+
+/* Page headers */
 
 .main-header {
   text-align: center;
@@ -141,6 +149,8 @@ a {
   width: 55%;
 }
 
+
+/* World Index Styling */
 
 .world-wrapper {
   display: flex;
@@ -205,8 +215,6 @@ a {
 .column-right p {
   line-height: 31px;
 }
-
-.links {}
 
 .links a {
   font-family: 'League Spartan', sans-serif;
@@ -337,9 +345,11 @@ textarea {
   transition: color 0.5s ease;
   line-height: 30px;
 }
+
 .form-share a:hover {
   color: rgba(255, 255, 255, 1);
 }
+
 
 /* Devise forms */
 
