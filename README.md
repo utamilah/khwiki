@@ -13,3 +13,8 @@ I wanted to build a very simple CRUD application that will allow users to naviga
 
 **Credit**
 All text and content came from [KH WIki](https://www.khwiki.com/)
+
+**User Stories**
+1. A user should be able to create an account, log in and edit content.
+2. A user should be able to navigate through the site and read content.
+3. A user can add new content.
