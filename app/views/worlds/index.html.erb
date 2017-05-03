@@ -1,10 +1,16 @@
-<div class="world-list">
-  <% @worlds.each do |world| %>
-    <div class="world">
-      <a href="<%= world_path(world) %>"><h2><%= world.name %></h2></a>
-    </div>
-  <% end %>
-  <div class="links">
-    <%= link_to 'Add New', new_world_path %>
+<section class="wrapper">
+  <div class="world-list">
+      <div class="world-wrapper">
+        <% @worlds.each do |world| %>
+            <div class="world" style="background: url(<%= world.img_url %>); background-size: 60%; background-position: center 20%; background-repeat: no-repeat;">
+              <a href="<%= world_path(world) %>"><h2><%= world.name %></h2></a>
+            </div>
+        <% end %>
+      </div>
+
+      <div class="links">
+        <%= link_to 'Add New', new_world_path %>
+      </div>
+
   </div>
-</div>
+</section>

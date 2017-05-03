@@ -1,32 +1,29 @@
 <section class="wrapper">
   <header class="main-header">
     <h2>New World</h2>
+    <p><%= link_to 'Back', worlds_path %></p>
   </header>
 
   <main class="form-content">
     <%= simple_form_for @world, :html => {:class => "pure-form pure-form-stacked"} do |f| %>
-          <div class="form-group">
-            <%= f.label :name %>
-            <%= f.text_field :name %>
-          </div>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
 
-          <div class="form-group">
-            <%= f.label :img_url %>
-            <%= f.text_field :img_url %>
-          </div>
+    <div class="form-group">
+      <%= f.label :img_url %>
+      <%= f.text_field :img_url %>
+    </div>
 
-          <div class="form-group">
-            <%= f.label :description %>
-            <%= f.text_field :description %>
-          </div>
-          
-          <div class="form-submit">
-            <%= f.submit %>
-          </div>
+    <div class="form-group">
+      <%= f.label :description %>
+      <%= f.text_field :description %>
+    </div>
 
-          <div class="links">
-            <%= link_to 'Back', worlds_path(@world) %>
-          </div>
+    <div class="form-submit">
+      <%= f.submit %>
+    </div>
     <% end %>
 
   </main>

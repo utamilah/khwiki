@@ -74,7 +74,7 @@ atlantica = World.create({
 halloween_town = World.create({
   name: "Halloween Town",
   img_url: "https://www.khwiki.com/images/9/92/Halloween_Town_KHII.png",
-  description: "Atlantica is a world that appears in Kingdom Hearts, Kingdom Hearts: Chain of Memories, and Kingdom Hearts II. It is based on the setting of the 1989 film, The Little Mermaid. Almost completely underwater, Atlantica is a rocky world with immense holes on its surface. Beneath the surface is an entire world full of fish, merfolk, and other aquatic species that make up King Triton's underwater kingdom."
+  description: "Halloween Town is a world from the Kingdom Hearts series, based on Tim Burton's 1993 classic stop-motion Disney film, The Nightmare Before Christmas. The ruler of this world is Jack Skellington, although he is not the mayor. This is most likely because he is in charge of making Halloween."
 })
 
 neverland = World.create({
