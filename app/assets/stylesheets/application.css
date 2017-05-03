@@ -67,13 +67,13 @@ a {
   float: right;
 }
 
+.user-action {
+  display: inline;
+}
+
 .user-info a, .user-action a {
   color: rgba(254, 191, 18, 1);
   transition: color 0.5s ease;
-}
-
-.user-action {
-  display: inline;
 }
 
 .user-info a:hover, .user-action a:hover {
@@ -391,4 +391,21 @@ textarea {
 
 .footer-text a:hover {
   color: rgba(255, 255, 255, 1)
+}
+
+
+@media screen and (max-width: 1200px) {
+  .world {
+    width: 49.25%;
+  }
+
+  .column-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .world {
+    width: 100%;
+  }
 }
