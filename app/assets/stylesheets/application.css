@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "League Spartan";
-  src: url('leaguespartan-bold.ttf') format("truetype");
+  src: url('fonts/leaguespartan-bold.ttf') format("truetype");
 }
 
 html {
@@ -394,7 +394,7 @@ textarea {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .world {
     width: 49.25%;
   }
@@ -433,7 +433,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .world {
     width: 100%;
   }
