@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :worlds do
     resources :characters
   end
+
+  # Good use of nested resources
 end
