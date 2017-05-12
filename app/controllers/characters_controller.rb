@@ -1,5 +1,8 @@
 class CharactersController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  # To write a little less code, you could also use
+  # before_action :authenticate_user!, except: [:index, :show]
+
 
   def index
     @characters = Character.all

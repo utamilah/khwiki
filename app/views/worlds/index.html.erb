@@ -6,6 +6,10 @@
         <a href="<%= world_path(world) %>">
           <h2><%= world.name %></h2>
         </a>
+        <%# While templating in the url for href works just fine, you could also use %>
+        <% link_to world_path(@world) do %>
+          <h2><%= world.name %></h2>
+        <% end %>
       </div>
       <% end %>
     </div>

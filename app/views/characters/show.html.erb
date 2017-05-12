@@ -17,7 +17,9 @@
       </p>
 
       <div class="links">
-        <%= link_to 'Edit', edit_world_character_path %>
+        <%# I'm surprised the link below works and would recommend that you still
+        give it inputs representing the world / character in question %>
+        <%= link_to 'Edit', edit_world_character_path(@world, @character)%>
       </div>
     </div>
 
